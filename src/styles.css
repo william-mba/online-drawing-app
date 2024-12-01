@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer theme {
+  .bg-color {
+    @apply bg-radial-[at_90%_25%] to-75% from-indigo-500 to-pink-500;
+  }
+}
